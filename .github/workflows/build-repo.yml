@@ -23,3 +23,5 @@ jobs:
           git add Packages Packages.gz Packages.xz repo/packages.json
           git diff --cached --quiet || git commit -m "Build package indexes"
           git push
+
+# Bootstrap repository indexes for the initial Sileo source setup.
