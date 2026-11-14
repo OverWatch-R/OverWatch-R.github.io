@@ -1,0 +1,25 @@
+name: Build package indexes
+on:
+  push:
+    branches: [main]
+    paths: ["pool/**", "scripts/**", ".github/workflows/build-repo.yml"]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build APT indexes
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y dpkg-dev
+          python3 scripts/build_repo.py
+      - name: Commit generated indexes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Packages Packages.gz Packages.xz repo/packages.json
+          git diff --cached --quiet || git commit -m "Build package indexes"
+          git push
