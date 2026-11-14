@@ -1,6 +1,6 @@
 const $ = s => document.querySelector(s);
 let packages = [], active = "all";
-const repoURL = location.origin + location.pathname.replace(/index\\.html$/, "").replace(/\\/?$/, "/");
+const repoURL = location.origin + "/";
 $("#sourceText").textContent = repoURL;
 $("#addSource").href = "sileo://source/" + encodeURIComponent(repoURL);
 $("#year").textContent = new Date().getFullYear();
