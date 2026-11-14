@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "name": "CPU Thermal Unlock - English Patch",
+    "package": "byg.iosios.net.monitor.english",
+    "version": "1.6.2-105-en1",
+    "description": "Install on top of \"CPU\u53bb\u6e29\u63a7\" (byg.iosios.net.monitor 1.6.2-105) to switch its settings pane, Control Center module, alerts and test script to English. Respring after installing.",
+    "author": "English localization patch",
+    "platforms": [],
+    "depiction": ""
+  }
+]

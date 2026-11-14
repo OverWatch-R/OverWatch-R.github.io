@@ -1,0 +1,13 @@
+Package: byg.iosios.net.monitor.english
+Version: 1.6.2-105-en1
+Section: Miscellaneous
+Maintainer: Community English patch
+Depends: byg.iosios.net.monitor (>= 1.6.2-105)
+Replaces: byg.iosios.net.monitor
+Architecture: iphoneos-arm64e
+Name: CPU Thermal Unlock - English Patch
+Author: English localization patch
+Description: Install on top of "CPU去温控" (byg.iosios.net.monitor 1.6.2-105) to switch its settings pane, Control Center module, alerts and test script to English. Respring after installing.
+Filename: pool/CPUthermal_English_Patch_1.6.2-105_iphoneos-arm64e.deb
+Size: 80372
+SHA256: 76b56e77945d2af74a6d8e3bc73d89c03dc6586a94878182505acedaa3f0da6c
